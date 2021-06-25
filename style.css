@@ -1,0 +1,402 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 40px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3f5d45;
+  margin-bottom: 38px;
+}
+
+.menu li {
+  text-align: center;
+}
+
+.menu li a {
+  display: block;
+  text-decoration: none;
+  color: #3f5d45;
+  font-weight: bold;
+  width: 100px;
+}
+
+.menu li a:hover {
+  background-color: #3f5d45;
+  color: #fff;
+}
+
+.banner {
+  margin: 0 auto;
+  width: 940px;
+  height: 496px;
+  margin-bottom: 60px;
+}
+
+.content {
+  display: flex;
+  margin-left: 42px;
+}
+
+ul.list {
+  width: 300px;
+  margin-right: 20px;
+}
+
+.list li {
+  text-align: center;
+  margin-bottom: -1px; /*不太熟悉使用時間*/
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 65px;
+}
+
+.list li a {
+  display: block;
+  text-decoration: none;
+  color: #3f5d45;
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px solid #eaf0ed;
+  text-align: center;
+}
+
+.list li a:hover {
+  background-color: #eaf0ed;
+}
+
+.list h3 {
+  color: #eaf0ed;
+  background-color: #3f5d45;
+}
+
+.productList {
+  width: 620px; /*300+20+300*/
+}
+
+.productList-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.productList-card li {
+  width: 300px; /*會忘記*/
+  position: relative;
+}
+
+.productList-card .tag {
+  position: absolute;
+  background-color: #3f5d45;
+  color: #fff;
+  top: 0px;
+  left: 20px;
+  font-size: 16px;
+  writing-mode: vertical-lr;
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 10px;
+}
+
+.productList-card i {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #3f5d45;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-evenly;
+  border-left: 1px solid #eaf0ed;
+  border-right: 1px solid #eaf0ed;
+  border-bottom: 1px solid #eaf0ed;
+  font-size: 20px;
+  text-align: center;
+  color: #3f5d45;
+  line-height: 56px;
+  margin-top: -2px;
+}
+
+.card-body h2 {
+  width: 173px;
+  border-right: 1px solid #eaf0ed;
+}
+
+.card-body span {
+  width: 127px;
+  font-weight: bold;
+}
+
+.productList-card a {
+  display: block;
+  width: 300px;
+  text-decoration: none;
+  text-align: center;
+  color: #3f5d45;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  background-color: #eaf0ed;
+  margin-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.paging {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 42px;
+  margin-bottom: 60px;
+}
+
+.paging li {
+  border: 1px solid #eaf0ed;
+}
+
+.paging li a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  align-content: center;
+  color: #3f5d45;
+  box-sizing: border-box;
+}
+
+.pg a:hover {
+  background: #3f5d45;
+  color: #eaf0ed;
+}
+
+.contact {
+  display: flex;
+  font-size: 24px;
+  justify-content: space-evenly;
+  background: #3f5d45;
+  height: 116px;
+  align-items: center;
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe h2 {
+  align-self: center;
+  margin-left: 20px;
+  color: #eaf0ed;
+}
+
+.inputemail {
+  display: flex;
+  position: relative;
+}
+
+.inputemail span {
+  position: absolute;
+  top: 2px;
+  left: 15px;
+}
+
+.inputemail a {
+  background-color: #ffe180;
+  width: 64px;
+  height: 56px;
+  border: #ffe180;
+  margin-left: -1px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.inputemail img {
+  margin-top: 16px;
+}
+
+.email input {
+  height: 56px;
+  width: 216px;
+  border: #3f5d45;
+  box-sizing: border-box;
+}
+
+.contact_list {
+  margin-left: 122px;
+  margin-bottom: 30px;
+  color: #3f5d45;
+  font-size: 16px;
+}
+
+.contact_list img {
+  margin-top: 39px;
+  margin-bottom: 115.5px;
+}
+
+.info {
+  display: flex;
+}
+
+.info h2 {
+  writing-mode: vertical-rl;
+  color: #3f5d45;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 494px;
+  margin-top: 30px;
+}
+
+.connect {
+  display: flex;
+  margin-left: 122px;
+}
+
+.connect img {
+  margin-bottom: 30px;
+}
+
+.connect p {
+  margin-left: 450px;
+}
+
+.footer {
+  background: #eaf0ed;
+}
